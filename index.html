@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jacks Trivia</title>
+    <link  rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+            <h1 style="text-align:center;">Jacks Trivia</h1>
+    </header>
+
+    <hr>
+
+    <form id="categorySelect" action="#" method="post">
+        <!--button default type="submit" in a form-->
+        <!--Add categories above this, add 2 more button to iterations of js loops-->
+    </form>
+
+    <hr>
+
+    <div id="FeedContainer">
+
+        <div id="Feed">
+            <!--This is a little funky because it looks like we should pick a category here, however that would not work because then we would
+                not be able to change categories because this box will fill with the question feed. Changing the questions up top is the best-->
+            <form class="question">
+                <p>Select a Category To Start Playing</p>
+                <div class="answerBox">
+                    <label for="choice1">Gotchu</label>
+                    <input type="radio" value="choice1" id="choice1" name="question1">
+                    <label for="choice2">Yeppers Peppers</label>
+                    <input type="radio" value="choice2" id="choice2" name="question1">
+                    <label for="choice3">Okedoke</label>
+                    <input type="radio" value="choice3" id="choice3" name="question1">
+                    <label for="choice4">Mhm</label>
+                    <input type="radio" value="choice4" id="choice4" name="question1">
+                </div>
+                <button>Nothing Button</button>
+            </form>
+        </div>
+    
+    </div>
+    
+</body>
+
+<script src="data.js"></script>
+<script src="index.js"></script>
+</html>

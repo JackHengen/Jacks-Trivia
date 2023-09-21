@@ -1,0 +1,18 @@
+hr{
+    border-top: 5px solid black;
+}
+#FeedContainer{
+    display: flex; justify-content: center;
+}
+#Feed{
+    display:flex; flex-direction:column; overflow-y: scroll; height:80vh;
+}
+.question, #addCategory, #catSelectBox{
+    border: 5px solid black; padding:5vh 5vw;  width:50vw;
+    margin-bottom:.5em;
+    text-align: center;
+}
+.answerBox{
+    display:flex; justify-content:center;
+}
+

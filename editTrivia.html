@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jacks Trivia</title>
+    <link href="index.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 style="text-align:center;">Jacks Trivia</h1>
+    </header>
+    
+    <hr>
+        
+    <button onclick="location.href='index.html'">Play Game</button>
+
+    <hr>
+
+        <div id="catSelectBox" style="margin-left:auto; margin-right:auto">
+            <h3>Edit Questions in Category</h3>
+
+            <form id="catSelectForm">
+            
+            </form>
+            <label for="questionText">Question:</label>
+                <input type="text" id="questionText">
+                <br>
+                
+                <form id="answerChoices">
+                    <label for="questionText">Correct Answer:</label>
+                    <input type="text" id="correctAnswer">
+                    <br>
+                    <label for="questionText">Wrong Answer 1:</label>
+                    <input type="text" id="wrongAnswer1">
+                    <br>
+                    <label for="questionText">Wrong Answer 2:</label>
+                    <input type="text" id="wrongAnswer2">
+                    <br>
+                    <label for="questionText">Wrong Answer 3:</label>
+                    <input type="text" id="wrongAnswer3">
+                </form>
+
+            <button onclick="AddQuestion()">Add Question</button>
+
+        </div>
+
+
+
+        <div id="addCategory" style="margin-left:auto; margin-right:auto">
+
+            <h3>Add a Category</h3>
+
+            <label for="catName">Name of Category:</label>
+            <input type="text" id="catName">
+            
+            <br>
+            <button onclick="AddCat()">Create a Category</button>
+
+        </div>
+    
+</body>
+
+<script src="editTrivia.js"></script>
+</html>
